@@ -38,7 +38,7 @@ def get_library(message):
     elif message.text.lower() in ["linux", "kali", "взлом", "безопасность", "pentest"
                                   "сети", "протоколы"]:
         bot.send_message(message.chat.id, "https://disk.yandex.ru/d/iN2gp9azN1JpJQ")
-    elif message.text in ["ans"]:
+    elif message.text.lower() in ["ans"]:
         bot.send_message(message.chat.id, question["a"], parse_mode='html')
     else:
         bot.send_message(message.chat.id, "Не знаю такого языка программирования")
